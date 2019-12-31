@@ -1,0 +1,76 @@
+
+    @mixin keyframes($animation-name) {
+        @keyframes #{$animation-name} {
+          @content;
+        }
+    }
+
+    @mixin animation($str) {
+        animation: #{$str};
+    }
+
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: rgb(194, 194, 194);
+    margin-left: 15vw;
+    z-index: 10;
+    }
+    #spin {
+    color:rgb(65, 65, 65);
+    }
+    
+
+   
+
+    #spin:after {
+        content:"t";
+        // animation: spin 5s linear infinite;
+        @include animation('spin 5s linear infinite');
+    }
+
+    @include keyframes(spin) {
+        0% { content:"_";}
+        1% { content:"%_";}
+        2% { content:"d_";}
+        4% { content:"de%_" ;}
+        6% { content:"desi%_*" ;}
+        8% { content:"desig_";}
+        10% { content:"des!gne_%";}
+        12% { content:"designer_";}
+        29% { content:"designer_";}
+        30% { content:"designe_%";}
+        32% { content:"de$!gn_#";}
+        33% { content:"de$!_%#";}
+        34% { content:"de$_";}
+        35% { content:"%de_";}
+        36% { content:"%d_";}
+        37% { content:"%_";}
+        39% { content:"r_";}
+        41% { content:"ri#_";}
+        43% { content:"riw#_";}
+        45% { content:"riw@#_";}
+        47% { content:"riw@z#_";}
+        49% { content:"riwaz_";}
+        50% { content:"riwaz";}
+        67% { content:"riwaz";}
+        68% { content: "riwa_*";}
+        69% { content: "$riwa_%";}
+        70% { content:"r$!w_}";}
+        71% { content:"ri_^%";}
+        72% { content:"[ri_%";}
+        74% { content:"r^_%";}
+        76% { content:"#_%";}
+        78% { content:"d_";}
+        80% { content:"de%_";}
+        82% { content: "deve_^" ;}
+        84% { content: "develo_" ;}
+        86% { content: "developer_" ;}
+        95% { content: "developer_" ;}
+        96% { content: "develope_%";}
+        97% { content: "deve^_&";}
+        98% { content: "@de_";}
+        100% { content: "_";}
+        }
