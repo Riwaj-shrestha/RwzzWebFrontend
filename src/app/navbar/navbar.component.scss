@@ -10,14 +10,32 @@ nav {
     justify-content: space-between;
     color: #4d4d4e;
     background-color: #181818;
-    .logo{
-        height: 7%;
+    // box-shadow: 0 8px 38px rgba(0,0,0,0.10), 0 8px 12px rgba(0,0,0,0.1);
+    .logo {
+        height: 9%;
         width: 100%;
         background-color: #000;
         color: #f2f2f2;
         display: flex;
+        flex-flow: column wrap;
         align-items: center;
         justify-content: center;
+        &__letter {
+            text-transform: uppercase;
+            display: block;
+            font-family: 'Roboto Condensed';
+            font-weight: 600;
+            font-size: 2.9vw;
+            line-height: 0.9em;
+            // color: rgb(0, 183, 255);
+            color: rgb(197, 154, 99);
+        }
+        &__subtitle {
+            margin: 0;
+            padding: 0;
+            line-height: 0.9em;
+            font-size: 0.7vw;
+        }
     }
 
     .menu{
@@ -27,9 +45,14 @@ nav {
         align-items: center;
         flex-flow: column wrap;
         &__item{
-            padding: 15px 1px;
+            padding: 20px 1px;
             text-transform: uppercase;
-            
+            cursor: pointer;
+            &:hover{
+            // color: rgb(0, 183, 255);
+            color: rgb(197, 154, 99);
+
+        }
         }
     }
 
@@ -41,4 +64,13 @@ nav {
 
         }
     }
+}
+
+
+.icon{
+    height:26px; 
+    fill:#4d4d4e;
+}
+.icon:hover {
+    fill:rgb(197, 154, 99);
 }
