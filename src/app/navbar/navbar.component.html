@@ -1,10 +1,10 @@
 <nav>
-    <div class="logo">
+    <a routerLink="/" class="logo">
         <div class="logo__letter">R</div>
         <div class="logo__subtitle">Rwzz</div>
-    </div>
+    </a>
     <div class="menu">
-        <div class="menu__item">
+        <a routerLink='home' routerLinkActive="active" class="menu__item">
             <span class="icon-title">Home</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"  style="enable-background:new 0 0 512 512;" class="icon" xml:space="preserve">
                 <g>
@@ -18,14 +18,14 @@
                     </g>
                 </g>
             </svg>
-        </div>
-        <div class="menu__item">
+        </a>
+        <a routerLink='work' routerLinkActive="active" class="menu__item">
             <span class="icon-title">Work</span>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -31 512 512" class="icon">
                 <path d="m497.09375 60.003906c-.03125 0-.0625-.003906-.09375-.003906h-136v-15c0-24.8125-20.1875-45-45-45h-120c-24.8125 0-45 20.1875-45 45v15h-136c-8.351562 0-15 6.84375-15 15v330c0 24.8125 20.1875 45 45 45h422c24.8125 0 45-20.1875 45-45v-329.683594c0-.019531 0-.039062 0-.058594-.574219-9.851562-6.632812-15.199218-14.90625-15.253906zm-316.09375-15.003906c0-8.269531 6.730469-15 15-15h120c8.269531 0 15 6.730469 15 15v15h-150zm295.1875 45-46.582031 139.742188c-2.042969 6.136718-7.761719 10.257812-14.226563 10.257812h-84.378906v-15c0-8.285156-6.714844-15-15-15h-120c-8.285156 0-15 6.714844-15 15v15h-84.378906c-6.464844 0-12.183594-4.121094-14.226563-10.257812l-46.582031-139.742188zm-175.1875 150v30h-90v-30zm181 165c0 8.269531-6.730469 15-15 15h-422c-8.269531 0-15-6.730469-15-15v-237.566406l23.933594 71.796875c6.132812 18.40625 23.289062 30.769531 42.6875 30.769531h84.378906v15c0 8.285156 6.714844 15 15 15h120c8.285156 0 15-6.714844 15-15v-15h84.378906c19.398438 0 36.554688-12.363281 42.6875-30.769531l23.933594-71.796875zm0 0"/>
             </svg>
-        </div>
-        <div class="menu__item">
+        </a>
+        <a routerLink='skills' routerLinkActive="active" class="menu__item">
             <span class="icon-title">Skills</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" class="icon" xml:space="preserve">
                 <g>
@@ -44,7 +44,7 @@
                     </g>
                 </g>
             </svg>
-        </div>
+        </a>
         <div class="menu__item">
             <span class="icon-title">About</span>
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 482.9 482.9" style="enable-background:new 0 0 482.9 482.9;" class="icon" xml:space="preserve">
@@ -79,3 +79,11 @@
         <div class="social__item">lk</div>
     </div>
 </nav>
+<a routerLink='blog' class="blog-btn">
+    <div class="blog-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 511" width="1vw" class="icon-blog">
+                <path d="m373.953125 291.785156c-7.707031-7.675781-17.230469-13.539062-27.550781-16.957031l-.914063-.304687-95.148437-21.636719 21.359375 95.402343.3125.945313c3.433593 10.371094 9.328125 19.9375 17.050781 27.664063l138.027344 134.242187 84.910156-85.105469zm52.714844 163.195313-109.425781-106.417969c-.742188-.75-1.441407-1.535156-2.101563-2.359375l28.242187-28.222656c.839844.675781 1.648438 1.398437 2.410157 2.160156l109.328125 106.324219zm-97.066407 17.089843 41.09375 39.964844h-310.75c-33.054687 0-59.945312-26.890625-59.945312-59.945312v-391.644532c0-33.054687 26.890625-59.945312 59.945312-59.945312h391.644532c33.054687 0 59.945312 26.890625 59.945312 59.945312v309.394532l-39.964844-38.867188v-270.527344c0-11.019531-8.964843-19.980468-19.980468-19.980468h-391.644532c-11.019531 0-19.980468 8.960937-19.980468 19.980468v391.644532c0 11.015625 8.960937 19.980468 19.980468 19.980468zm82.023438-338.691406h-311.714844v-39.964844h311.714844zm0 79.925782h-311.714844v-39.960938h311.714844zm-311.714844 39.964843h111.898438v39.964844h-111.898438zm0 0"/>
+            </svg>
+    </div>
+    <div class="blog-text">Read my Article</div>
+</a>

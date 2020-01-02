@@ -5,3 +5,26 @@ body{
     background: #1d1d1d;
     font-family: 'Open Sans', sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(185, 185, 185);
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(112, 112, 112);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
