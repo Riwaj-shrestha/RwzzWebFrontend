@@ -48,9 +48,34 @@ nav {
             padding: 20px 1px;
             text-transform: uppercase;
             cursor: pointer;
+            width: 100%;
+            height: 1.4vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon{
+                height:1.3vw; 
+                fill:#4d4d4e;
+                transition: 300ms opacity ;
+                opacity: 1;
+            }
+            .icon-title {
+                transition: 300ms opacity ;
+                // display: none;
+                opacity: 0;
+                position: absolute;
+            }
             &:hover{
             // color: rgb(0, 183, 255);
             color: rgb(197, 154, 99);
+            .icon {
+                // display: none;
+                opacity: 0;
+            }
+            .icon-title {
+                display: inline-block;
+                opacity: 1;
+            }
 
         }
         }
@@ -67,10 +92,7 @@ nav {
 }
 
 
-.icon{
-    height:26px; 
-    fill:#4d4d4e;
-}
+
 .icon:hover {
     fill:rgb(197, 154, 99);
 }

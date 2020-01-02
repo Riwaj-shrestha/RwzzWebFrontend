@@ -18,8 +18,57 @@
         animation: #{$str};
     }
 
+.timeline {
+    width: 1px;
+    height: 300%;
+    left: 9vw;
+    top: 28vh;
+    z-index: 9;
+    position: absolute;
+    background-color: rgb(197, 154, 99);
+    .milestone {
+        position: absolute;
+        .bullet{
+            position: absolute;
+        }
+        .bullet::before{
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 0;
+            z-index: 10;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            border: 2px solid rgb(197, 154, 99);
+            background-color: #1b191e;
+        }
+    
+        .bullet-txt{
+            color: rgb(197, 154, 99);
+            margin-left: 1.4vw;
+            margin-top: 0;
+            line-height: 0.8;
+        }
+    }
+    .milestone-1{
+        top: 0;
+    }
+    .milestone-2{
+        top: 25%;
+    }
+    .milestone-3{
+        top: 50%;
+    }
+    .milestone-4{
+        top: 99%;
+    }
+    
+}
+
+
 .home-content{
-    margin-top: 30vh;
+    margin-top: 31vh;
     margin-left: 10vw;
     color: rgb(194, 194, 194);
 } 
@@ -27,7 +76,7 @@
 
 .content__1 {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 60px;
+    font-size: 3.5vw;
     font-weight: 700;
 }
 
