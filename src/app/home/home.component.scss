@@ -25,7 +25,8 @@
     top: 28vh;
     z-index: 9;
     position: absolute;
-    background-color: rgb(197, 154, 99);
+    // background-color: rgb(197, 154, 99);
+    background-color: #08fdd8;
     .milestone {
         position: absolute;
         .bullet{
@@ -40,12 +41,12 @@
             width: 6px;
             height: 6px;
             border-radius: 50%;
-            border: 2px solid rgb(197, 154, 99);
+            border: 2px solid #08fdd8;
             background-color: #1b191e;
         }
     
         .bullet-txt{
-            color: rgb(197, 154, 99);
+            color: #08fdd8;
             margin-left: 1.4vw;
             margin-top: 0;
             line-height: 0.8;
@@ -92,7 +93,7 @@
     // color:rgb(65, 65, 65);
     // color: rgb(197, 154, 99);
     // color: #5CC8FF;
-    color: #A58861;
+    color: #08fdd8
 }
 
 #spin:after {
@@ -146,17 +147,41 @@
         }
 
 .big-R {
-    font-size: 35vw;
-    color: transparent;
+    // font-size: 35em;
+    font-size: 55vh;
+    color: #FC0853;
     font-weight: 800;
     position: absolute;
-    top: 5vh;
-    right: 8vw;
+    top: 8vh;
+    right: 18vw;
     font-family: 'Open Sans', sans-serif;
-    -webkit-text-stroke: 1px rgb(77, 77, 77);
-    transform: rotate(1deg) scale(0.717) skew(-7deg) translate(-6px);
--webkit-transform: rotate(1deg) scale(0.717) skew(-7deg) translate(-6px);
--moz-transform: rotate(1deg) scale(0.717) skew(-7deg) translate(-6px);
--o-transform: rotate(1deg) scale(0.717) skew(-7deg) translate(-6px);
--ms-transform: rotate(1deg) scale(0.717) skew(-7deg) translate(-6px);
+    transform: rotate(348deg) scale(0,0.69) skew(3deg) translate(-12px);
+-webkit-transform: rotate(348deg) scale(1,1.26) skew(3deg) translate(-12px);
+-moz-transform: rotate(348deg) skew(3deg) translate(-12px);
+-o-transform: rotate(348deg) skew(3deg) translate(-12px);
+-ms-transform: rotate(348deg) skew(3deg) translate(-12px);
+
+&::before {
+    content: 'R';
+    position: absolute;
+    left: 50px;
+    // color: rgb(0, 208, 255);
+    // color: rgb(197, 154, 99);
+    color: #08fdd8;
+}
+}
+
+
+
+@media screen and (max-width: 720px) {
+    .big-R {
+        top: 38vh;
+        right: 29vw;
+        font-size: 48vh;
+    }
+
+    .content__1 {
+        font-size: 3em;
+    }
+    
 }
