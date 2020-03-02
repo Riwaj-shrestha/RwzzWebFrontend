@@ -1,6 +1,6 @@
 nav {
     height: 100vh;
-    width: 4%;
+    width: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -26,13 +26,14 @@ nav {
             display: block;
             font-family: 'Roboto Condensed';
             font-weight: 600;
-            font-size: 2.9vw;
+            font-size: 48px;
             line-height: 0.9em;
             // color: rgb(74, 0, 212);
             // color: rgb(197, 154, 99);
             // color: #5CC8FF;
             // color: rgb(68, 56, 40);
             color: #FC0853;
+            margin-left: 5px;
         }
 
         &__letter::before {
@@ -41,11 +42,11 @@ nav {
             // color: rgb(0, 208, 255);
             // color: rgb(197, 154, 99);
             color: #08fdd8;
-            transform: translate(-5px, 0px);
--webkit-transform: translate(-5px, 0px);
--moz-transform: translate(-5px, 0px);
--o-transform: translate(-5px, 0px);
--ms-transform: translate(-5px, 0px);
+            transform: translate(-4px, 0px);
+            -webkit-transform: translate(-4px, 0px);
+            -moz-transform: translate(-4px, 0px);
+            -o-transform: translate(-4px, 0px);
+            -ms-transform: translate(-4px, 0px);
         }
         &__subtitle {
             margin: 0;
@@ -57,24 +58,24 @@ nav {
 
     .menu{
         width: 100%;
-        font-size: 0.66vw;
+        font-size: 11px;
         display: flex;
         align-items: center;
         flex-flow: column wrap;
     
         &__item {
-            padding: 18px 1px;
+            padding: 16px 1px;
             text-transform: uppercase;
             cursor: pointer;
             width: 100%;
             text-decoration: none;
             color: #4d4d4e;
-            height: 1.4vw;
+            height: 22px;
             display: flex;
             justify-content: center;
             align-items: center;
             .icon{
-                height:1.3vw; 
+                height:22px; 
                 fill:#4d4d4e;
                 transition: 300ms opacity ;
                 opacity: 1;
@@ -200,7 +201,7 @@ a {
         // box-shadow: 0 8px 38px rgba(0,0,0,0.10), 0 8px 12px rgba(0,0,0,0.1);
         .logo {
             height: 100%;
-            width: 18%;
+            width: 16%;
             background-color: #000;
             color: #f2f2f2;
             text-decoration: none;
@@ -213,7 +214,7 @@ a {
                 display: block;
                 font-family: 'Roboto Condensed';
                 font-weight: 600;
-                font-size: 3.4em;
+                font-size: 3em;
                 line-height: 0.9em;
                 // color: rgb(74, 0, 212);
                 // color: rgb(197, 154, 99);
