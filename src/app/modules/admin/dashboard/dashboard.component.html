@@ -5,6 +5,18 @@
       <button (click)="logout()">
         Log out
       </button>
+      <form [formGroup]="blogPostForm" (submit)="submit()">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" formControlName="title" id="title">
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          <textarea formControlName="content" id="content"></textarea>
+        </div>
+
+        <button type="submit">Post</button>
+      </form>
 
     </div>
   </div>

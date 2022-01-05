@@ -22,4 +22,25 @@
     margin: 0.5rem 0;
     background-color: #08fdd8;
   }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .form-group {
+      padding: 0.5rem 0;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        color: #878787;
+        font-size: 14px;
+      }
+    }
+
+    button {
+      margin: 0.5rem 0;
+      background-color: #08fdd8;
+    }
+  }
 }
