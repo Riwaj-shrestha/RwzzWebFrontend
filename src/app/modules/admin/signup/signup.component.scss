@@ -1,0 +1,38 @@
+.account-page {
+  height: 100vh;
+  width: 100%;
+}
+
+.signup-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #505050;
+  padding: 1.5rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .form-group {
+      padding: 0.5rem 0;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        color: #878787;
+        font-size: 14px;
+      }
+    }
+
+    button {
+      margin: 0.5rem 0;
+      background-color: #08fdd8;
+    }
+  }
+}

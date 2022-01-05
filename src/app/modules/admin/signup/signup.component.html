@@ -1,1 +1,21 @@
-<p>signup works!</p>
+<div class="account-page">
+  <div class="signup-container">
+    <div class="card">
+      <form [formGroup]="signupForm" (submit)="signup()">
+        <div class="form-group">
+          <label for="full-name">Full name</label>
+          <input type="text" formControlName="fullName" id="full-name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" formControlName="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="text" formControlName="password" id="password">
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</div>
