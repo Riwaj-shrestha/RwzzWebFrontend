@@ -9,7 +9,8 @@ import { BlogComponent } from './blog/blog.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
   {
     path: 'home',
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./modules/admin/admin.module').then(m => m.AdminModule)
   },
 ];
 
