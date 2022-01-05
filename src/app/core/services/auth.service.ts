@@ -1,22 +1,23 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
-import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  userLoggedIn = new BehaviorSubject(false);    // other components can check on this variable for the login status of the user
+  userLoggedIn: boolean;      // other components can check on this variable for the login status of the user
 
   constructor(private router: Router, private afAuth: AngularFireAuth) {
-    // this.userLoggedIn = false;
+    this.userLoggedIn = false;
 
     this.afAuth.onAuthStateChanged((user) => {              // set up a subscription to always know the login status of the user
-      this.userLoggedIn.next(!!user);
+      this.userLoggedIn = !!user;
     }).then();
   }
+
+  isloggedIn = () => this.userLoggedIn;
 
   loginUser(email: string, password: string): Promise<any> {
     return this.afAuth.signInWithEmailAndPassword(email, password)

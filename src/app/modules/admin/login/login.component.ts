@@ -14,21 +14,17 @@ export class LoginComponent implements OnInit {
   firebaseErrorMessage: string;
 
   constructor(private authService: AuthService, private router: Router, private afAuth: AngularFireAuth) {
-    this.loginForm = new FormGroup({
-      email: new FormControl('', [Validators.required, Validators.email]),
-      password: new FormControl('', Validators.required)
-    });
-
+    if (!this.authService.isloggedIn()) {
+      this.router.navigateByUrl('/admin/dashboard').then();
+    }
     this.firebaseErrorMessage = '';
   }
 
 
   ngOnInit(): void {
-    this.authService.userLoggedIn.subscribe(value => {
-      console.log(value);
-      if (value) {
-        this.router.navigateByUrl('/admin/dashboard').then();
-      }
+    this.loginForm = new FormGroup({
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', Validators.required)
     });
   }
   loginUser() {
