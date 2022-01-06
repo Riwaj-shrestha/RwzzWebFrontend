@@ -1,7 +1,9 @@
 export interface Blogpost {
+  id: string;
   title: string;
   content: string;
-  author_name: string;
-  publication_date: Date;
+  authorName: string;
+  publicationDate: Date;
   likes: number;
+  image: any;
 }
