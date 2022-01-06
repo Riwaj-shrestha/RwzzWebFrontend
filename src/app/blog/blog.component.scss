@@ -81,8 +81,16 @@
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+  transition: 0.15s ease;
+
+  cursor: pointer;
 
   padding: 20px;
+
+  &:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 38px rgba(0,0,0,0.33), 0 8px 12px rgba(0,0,0,0.2);
+  }
 
   .post-header {
     display: flex;
@@ -92,7 +100,7 @@
 
     .post-img {
       height: 100px;
-      width: 100px;
+      min-width: 100px;
       background-position: center center;
       background-size: cover;
       border-radius: 50%;
@@ -105,7 +113,7 @@
       justify-content: flex-start;
       color: rgb(233, 233, 233);
       margin-left: 10px;
-      
+
       .post-title {
         font-family: "Roboto Condensed", sans-serif;
         font-size: 2.3em;
