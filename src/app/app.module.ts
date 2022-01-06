@@ -10,6 +10,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { BlogComponent } from './blog/blog.component';
 import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
+import { BlogPostComponent } from './blog-post/blog-post.component';
+import { TruncateTextPipe } from './core/helper/utilities';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,17 @@ import { AngularFireModule } from '@angular/fire/compat';
     HomeComponent,
     WorkComponent,
     SkillsComponent,
-    BlogComponent
+    BlogComponent,
+    BlogPostComponent,
+    TruncateTextPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+  ],
+  exports: [
+    TruncateTextPipe,
   ],
   providers: [],
   bootstrap: [AppComponent]

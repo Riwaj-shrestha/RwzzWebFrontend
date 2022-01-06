@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
 import { SkillsComponent } from './skills/skills.component';
 import { BlogComponent } from './blog/blog.component';
+import * as path from 'path';
+import { BlogPostComponent } from './blog-post/blog-post.component';
 
 
 const routes: Routes = [
@@ -27,6 +29,10 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
+  },
+  {
+    path: 'blog/:indexId/:postId',
+    component: BlogPostComponent
   },
   {
     path: 'admin',
