@@ -55,7 +55,7 @@
           <div class="post-img"
                [style.backgroundImage]="post.image ? 'url('+ post.image +')' : 'url(../../assets/images/django.png)'"></div>
           <div class="post-head">
-            <div class="post-title">{{ post.title }}</div>
+            <div class="post-title">{{ post.title | truncateText: 50 }}</div>
             <div class="post-detail">
               <div class="post-author">Riwaj Shrestha</div>
               <div>•</div>

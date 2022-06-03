@@ -219,7 +219,7 @@ a {
       &__letter {
         text-transform: uppercase;
         display: block;
-        font-family: 'Roboto Condensed';
+        font-family: 'Roboto Condensed', sans-serif;
         font-weight: 600;
         font-size: 3em;
         line-height: 0.9em;
@@ -333,7 +333,7 @@ a {
       align-items: center;
 
       .icon-blog {
-        height: 30px;
+        height: 22px;
         fill: #08fdd8;
       }
     }
