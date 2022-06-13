@@ -4,6 +4,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
   display: flex;
   flex-flow: column wrap;
   align-items: center;

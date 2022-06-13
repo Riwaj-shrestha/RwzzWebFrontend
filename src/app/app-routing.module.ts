@@ -4,32 +4,39 @@ import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
 import { SkillsComponent } from './skills/skills.component';
 import { BlogComponent } from './blog/blog.component';
-import * as path from 'path';
 import { BlogPostComponent } from './blog-post/blog-post.component';
+import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'
+    component: AppComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+      },
+      {
+        path: 'home',
+        component: HomeComponent,
+      },
+      {
+        path: 'work',
+        component: WorkComponent,
+      },
+      {
+        path: 'skills',
+        component: SkillsComponent,
+      },
+      {
+        path: 'blog',
+        component: BlogComponent,
+      },
+    ]
   },
-  {
-    path: 'home',
-    component: HomeComponent,
-  },
-  {
-    path: 'work',
-    component: WorkComponent,
-  },
-  {
-    path: 'skills',
-    component: SkillsComponent,
-  },
-  {
-    path: 'blog',
-    component: BlogComponent,
-  },
+
   {
     path: 'blog/:indexId/:postId',
     component: BlogPostComponent
@@ -41,7 +48,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
