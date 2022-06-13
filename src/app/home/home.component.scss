@@ -180,8 +180,8 @@
 
 @media screen and (max-width: 720px) {
     .big-R {
-        top: 21rem;
-        right: 7rem;
+        top: 19rem;
+        right: 5rem;
         font-size: 20rem;
       line-height: 0;
       &::before {
@@ -191,6 +191,10 @@
 
     .content__1 {
         font-size: 3em;
+      margin-left: 1rem;
     }
+  .content__2 {
+    margin-left: 1rem;
+  }
 
 }
