@@ -23,7 +23,6 @@ posts = [];
           ...e.payload.doc.data() as {}
         } as Blogpost;
       });
-      console.log(this.posts);
     });
   }
 
