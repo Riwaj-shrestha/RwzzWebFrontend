@@ -16,7 +16,6 @@ export class BlogPostComponent implements OnInit {
   ngOnInit(): void {
     this.postId = this.activeRoute.snapshot.paramMap.get('postId');
     this.blogService.getBlog(this.postId).subscribe(data => {
-      console.log(data);
       this.blogPost = data;
     });
   }
